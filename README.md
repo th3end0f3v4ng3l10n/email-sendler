@@ -30,3 +30,5 @@
     
 ----
 <h3>EXAMPLE</h3>
+
+![Alt Text](https://github.com/th3end0f3v4ng3l10n/email-sendler/blob/main/example/gif.gif)
