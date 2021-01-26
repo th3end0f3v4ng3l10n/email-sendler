@@ -26,7 +26,7 @@
 
 Для LINUX:
 
-    python3 mail.py
+    python3 main.py
     
 ----
 <h3>EXAMPLE</h3>
