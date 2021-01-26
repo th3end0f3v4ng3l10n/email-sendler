@@ -17,6 +17,8 @@
 
 И не забыть про файл emails. В него нужно вставить email адреса на которые вы будете отправлять сообщения
 
+Тут https://myaccount.google.com/lesssecureapps?pli=1&rapt=AEjHL4Pp1XbEfdTLnkA1YzJzBLF5kUrsAXcsICUyRrQci_Jg-tPU-uxOBs-TdOEdzu1ilaQhCTjxKOv0MeywPFBwGoTI_VGHAg тыкнуть чтобы было разрешено
+
 ----
 
 <h3>START</h3>
