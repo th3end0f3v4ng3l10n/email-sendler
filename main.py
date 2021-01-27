@@ -5,6 +5,30 @@ from email.mime.text import MIMEText #Это тоже для сообщений
 from time import sleep #для контроля времени
 import configparser #Чтобы читать конфиг
 from colorama import Fore, Style #КРАСОТА
+import PySimpleGUI as sg
+from tkinter import *
+class Interface():
+    def main_window(self):
+        layout = [
+                [sg.Text('Адреса: '), sg.InputText(), sg.FileBrowse()],
+                [sg.Output(key='-OUT-', size=(80, 20))],
+                [sg.Button('Sumbit'), sg.Cancel(), sg.Button('Exit')]]
+        window = sg.Window('Game Finder', layout, element_justification='center').finalize()
+        window['-OUT-'].TKOut.output.config(wrap='word') # set Output element word wrapping
+
+
+        while True:
+            event, values = window.read()
+            if event == sg.WIN_CLOSED:
+                break
+                window.close()
+            elif event == 'Sumbit':
+                root = Main()
+                root.create_yandex_database()
+                root.function()
+            elif event == 'Exit':
+                break
+        window.close()
 
 class Main():
     def __init__(self):
@@ -59,7 +83,10 @@ class Main():
             server.sendmail(msg['From'], msg['To'], msg.as_string()) #отправляем сообщение
             server.quit() #kill server :)
             krasota(email) # название говорит само за себя
-
-root = Main()
-root.function()
-root.create_yandex_database()
+def use_all():
+    #root = Main()
+    #root.function()
+    #root.create_yandex_database()
+    interface = Interface()
+    interface.main_window()
+use_all()
