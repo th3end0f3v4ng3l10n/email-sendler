@@ -1,3 +1,6 @@
 smtplib
 colorama
 configparser
+pysimplegui
+selenium
+geckodriver-autoinstaller
